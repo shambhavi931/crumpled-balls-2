@@ -13,10 +13,10 @@ function setup() {
 	world = engine.world;
 
   ball= new Paper(100,100,20,20) 
-  dustbin= new Dustbin(500,280,70,30)
+  dustbin= new Ground(500,280,70,30)
   ground= new Ground(300,300,600,20)
   dustbin2= new Dustbin(450,250,30,80)
-  dustbin3= new Dustbin(550,250,30,80)
+  dustbin3= new Ground(550,250,30,80)
     
 
 	Engine.run(engine);
@@ -27,9 +27,7 @@ function draw() {
   rectMode(CENTER);
   background("white");
   ball.display()
-  dustbin.display()
   dustbin2.display()
-  dustbin3.display()
   ground.display()
   
   drawSprites();
